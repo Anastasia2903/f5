@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Five</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<form id="myForm" onsubmit="validateForm(); return false;">
+    <label for="pib">ПІБ:</label>
+    <input type="text" id="pib" name="pib" required>
+    <br>
+
+    <label for="phone">Телефон:</label>
+    <input type="text" id="phone" name="phone" required>
+    <br>
+
+    <label for="id_card">id-card:</label>
+    <input type="text" id="id_card" name="id_card" required>
+    <br>
+
+    <label for="faculty">Факультет:</label>
+    <input type="text" id="faculty" name="faculty" required>
+    <br>
+
+
+    <label for="birthdate">Дата народження:</label>
+    <input type="text" id="birthdate" name="birthdate" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ" required>
+    <br>
+
+    <input type="submit" value="Submit">
+</form>
+<table id="colorTable"></table>
+<div>
+    <label for="colorPicker" class="colorPicker">Виберіть колір:</label>
+    <input type="color" id="colorPicker" value="#ff0000" class="color">
+</div>
+
+<script src="./js/form.js"></script>
+<script src="./js/table.js"></script>
+</body>
+</html>
